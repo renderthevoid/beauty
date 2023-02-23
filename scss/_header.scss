@@ -1,0 +1,28 @@
+.header {
+    padding: 17px 0;
+    background-color: $gray;
+    &__inner {
+    }
+}
+.menu {
+    &__items {
+        @include flex(center, center);
+    }
+
+    &__item {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    &__item + &__item {
+        padding-left: 30px;
+    }
+    &__link {
+        padding: 5px;
+        transition: 0.3s linear;
+        &:hover {
+            background-color: $white;
+            border-radius: 10px;
+        }
+    }
+}

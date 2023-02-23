@@ -1,0 +1,66 @@
+.goods {
+    background-color: $gray;;
+    &__inner {
+        padding-top: 80px;  
+    }
+
+    &__specials {
+        @include flex(space-between, center);
+        margin-bottom: 38px;
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    &__logo {
+        padding-right: 45px;
+    }
+}
+.cards {
+    @include flex(space-between, center);
+    text-align: center;
+
+    &__card {
+        width: 255px;
+        height: 380px;
+        background-color: $white;
+    }
+
+    &__card-img {
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    &__card-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $dark;
+        margin-bottom: 20px;
+    }
+
+    &__card-cost {
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+    &__card-btn {
+        padding: 9px 40px;
+        background: $green;
+        color: $white;  
+        margin-bottom: 25px;
+        border-radius: 30px;
+        border: 2px solid transparent;
+        transition: 0.2s linear;
+        &:hover {
+            background-color: $white;
+            color: $green;
+            border: 2px solid $green;
+        }
+    }
+}

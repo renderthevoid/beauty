@@ -1,0 +1,77 @@
+.line {
+    padding-top: 20px;
+    &__inner {
+        padding-bottom: 20px;
+        border-bottom: 1px solid $gray;
+    }
+    &__container {
+        @include flex(space-between, center);
+        flex-direction: row;
+    }
+
+    &__logo {
+        @include flex(start, center);
+        flex-direction: row;
+    }
+
+    &__logo-img {
+    }
+
+    &__logo-text {
+        padding-left: 20px;
+        color: $green;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.1em;
+    }
+
+    &__contacts {
+        @include flex(center, center);
+    }
+
+    &__contacts-phone {
+        color: $dark;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        margin-right: 40px;
+    }
+
+    &__contacts-btn {
+        padding: 12px 27px;
+        background-color: $white;
+        border: 2px solid $green;
+        border-radius: 40px;
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        transition: 0.2s linear;
+        &:hover {
+            background-color: $green;
+            color: $white;
+        }
+    }
+
+    &__bottom {
+        margin: 30px 0;
+    }
+}
+.menu-categories {
+    @include flex(center, center);
+    &__item {
+        color: $dark;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    &__item + &__item {
+        padding-left: 40px;
+    }
+
+    &__link {
+        color: $dark;
+    }
+}

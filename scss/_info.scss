@@ -1,0 +1,89 @@
+.info {
+    padding-top: 100px;
+    padding-bottom: 133px;
+    background-color: $gray;
+    &__cards {
+        @include flex(space-between, center);
+    }
+
+    &__card {
+        background: $green;
+        height: 212px;
+        width: 540px;
+        @include flex(space-evenly, center);
+        flex-wrap: nowrap;
+    }
+
+    &__block {
+        color: $white;
+        width: 50%;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 25px;
+        &._car {
+            margin-left: 10px;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 25px;        
+        width: 80%;
+        &._car {
+            margin-left: 10px;
+        }
+    }
+
+    &__email {
+        width: 225px;
+        background-color: $white;
+        padding: 9px 25px;
+        border-radius: 30px;
+        &::placeholder {
+            color: $gray;
+        }
+    }
+
+    &__img {
+        width: 30%;
+        &-car {
+            margin-right: 10px;
+        }
+    }
+
+    &__btn {
+        padding: 9px 28px;
+        background-color: transparent;
+        border: 2px solid #FFFFFF;
+        border-radius: 40px;
+        color: $white;
+        transition: 0.2s linear;
+        &._car {
+            margin-left: 10px;
+        }
+        &:hover {
+            color: $green;
+            background-color: $white;
+        }
+    }
+}
+@media (max-width: 1100px) {
+    .info {
+        padding-top: 100px;
+        padding-bottom: 133px;
+        background-color: $gray;
+        &__cards {
+            @include flex(center, center);
+            max-width: 100%;
+        }
+        &__card {
+            margin-bottom: 20px;
+        }
+    }
+}

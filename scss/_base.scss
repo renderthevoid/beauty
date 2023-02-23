@@ -1,0 +1,22 @@
+$font: "Roboto", sans-serif;
+//цвета
+$dark: #333333;
+$green: #66C05D;
+$gray: #EFEFEF;
+$white: #fff;
+//контейнер
+$mw: 1110px;
+$mc: 0 auto;
+$pd: 0 15px;
+
+body {
+    font-family: $font;
+}
+.container {
+    max-width: $mw;
+    margin: $mc;
+    // padding: $pd;
+}
+a {
+    color: $dark;
+}
